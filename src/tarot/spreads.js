@@ -12,7 +12,7 @@ import ReferenceCard from './referenceCard.js';
 class Spreads extends Component {
 	render() {
 		return (
-			<Router>
+			<Router basename={process.env.PUBLIC_URL}>
 				<div>
 					<h1>Available Spreads</h1>
 					<ul className='spreadsNav'>
