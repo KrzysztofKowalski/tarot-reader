@@ -14,17 +14,17 @@ console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL + '/Spreads')
 class Spreads extends Component {
 	render() {
 		return (
-			<Router basename={process.env.PUBLIC_URL}>
+			<Router basename={process.env.PUBLIC_URL + '/Spreads'}>
 				<div>
 					<h1>Available Spreads</h1>
 					<ul className='spreadsNav'>
-						<li><Link className='button' to="/Spreads/OneCardDraw">One Card Draw</Link></li>
-						<li><Link className='button' to="/Spreads/ThreeCardDraw">Three Card Draw</Link></li>
-						<li><Link className='button' to="/Spreads/CelticCross">Celtic Cross</Link></li>
+						<li><Link className='button' to="/OneCardDraw">One Card Draw</Link></li>
+						<li><Link className='button' to="/ThreeCardDraw">Three Card Draw</Link></li>
+						<li><Link className='button' to="/CelticCross">Celtic Cross</Link></li>
 					</ul>
-					<Route exec path="/Spreads/OneCardDraw" component={() => <OneCardDraw deck={this.props.deck}/>}/>
-					<Route path="/Spreads/ThreeCardDraw" component={() => <ThreeCardDraw deck={this.props.deck}/>}/>
-					<Route path="/Spreads/CelticCross" component={() => <CelticCross deck={this.props.deck}/>}/>
+					<Route exec path="/OneCardDraw" component={() => <OneCardDraw deck={this.props.deck}/>}/>
+					<Route path="/ThreeCardDraw" component={() => <ThreeCardDraw deck={this.props.deck}/>}/>
+					<Route path="/CelticCross" component={() => <CelticCross deck={this.props.deck}/>}/>
 				</div>
 			</Router>
 		)
