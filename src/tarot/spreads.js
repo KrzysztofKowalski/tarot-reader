@@ -9,6 +9,8 @@ import Modal from 'react-modal';
 import { CardListItem } from './cardList.js';
 import ReferenceCard from './referenceCard.js';
 
+console.log('process.env.PUBLIC_URL', process.env.PUBLIC_URL + '/Spreads')
+
 class Spreads extends Component {
 	render() {
 		return (
