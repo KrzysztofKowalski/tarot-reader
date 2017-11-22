@@ -6,7 +6,7 @@ It was made to practice creating a simple React app from scratch(ish). It's func
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-The tarot images, descriptions and interpretations were borrowed from [winterlightning's Tarot repot](https://github.com/winterlightning/Tarot).
+The tarot images, descriptions and interpretations were borrowed from [winterlightning's Tarot repo](https://github.com/winterlightning/Tarot).
 
 ## To run locally
 
