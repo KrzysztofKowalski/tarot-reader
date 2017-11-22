@@ -45,7 +45,7 @@ ul.mainNav, ul.cardList, ul.spreadsNav, ul.threeCardDrawList, ul.oneCardDrawList
 	margin: 0;
 }
 
-ul.mainNav li {
+ul.mainNav li, ul.spreadsNav li {
 	display: inline-block;
 	margin-right: .75rem;
 }
@@ -66,7 +66,7 @@ ul.mainNav li a:hover {
 ul.threeCardDrawList li, ul.celticCrossDrawList li {
 	display: inline-block;
 	float: left;
-	/*padding: 1rem;*/
+	max-width: 200px;
 }
 
 div.cardContainer {
@@ -159,6 +159,13 @@ div.spreadCard.flipped {
 	}
 	div.cardContainer {
 		margin-right: 2rem;
+	}
+	ul.threeCardDrawList li, ul.celticCrossDrawList li {
+		display: inline-block;
+		float: left;
+		max-width: 200px;
+		margin-right: 2rem;
+		min-height: 425px;
 	}
 }
 
