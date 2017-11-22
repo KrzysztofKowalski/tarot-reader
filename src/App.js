@@ -22,9 +22,9 @@ class App extends Component {
 						<li><Link className='button button-primary' to="/Cards">Card Reference</Link></li>
 						<li><Link className='button button-primary' to="/Spreads">Spreads</Link></li>
 					</ul>
-					<Route exact path="/" component={Home}/>
-					<Route path="/Cards" component={() => <CardList deck={deck}/>}/>
-					<Route path="/Spreads" component={() => <Spreads deck={deck}/>}/>
+					<Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
+					<Route path={process.env.PUBLIC_URL + '/Cards'} component={() => <CardList deck={deck}/>}/>
+					<Route path={process.env.PUBLIC_URL + '/Spreads'} component={() => <Spreads deck={deck}/>}/>
 				</div>
 			</Router>
 		);
