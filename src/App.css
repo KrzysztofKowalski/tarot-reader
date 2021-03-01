@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'Eczar';
     src: url('./resource/Eczar-Regular-webfont.woff') format('woff');
@@ -5,6 +7,7 @@
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'Eczar-Bold';
     src: url('./resource/Eczar-Bold-webfont.woff') format('woff');
@@ -14,175 +17,208 @@
 }
 
 body {
-	margin: 0;
-	/*width: 100vw;*/
-	/*height: 100vh;*/
-	font-size: 16px;
-	font-family: 'Eczar', serif;
-	font-weight: normal;
-	background: linen;
+    margin: 0;
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    font-size: 16px;
+    font-family: 'Eczar', serif;
+    font-weight: normal;
+    background: #2f0a2e;
+    color: rgba(255, 176, 228, 0.55);
 }
 
 body.ReactModal__Body--open {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 #root {
-	padding: 1.2rem;
-	/*width: 100vw;*/
-	/*height: 100vh;*/
+    padding: 1.2rem;
+    /*width: 100vw;*/
+    /*height: 100vh;*/
 }
 
 h1 {
-	/*letter-spacing: 0.05rem;*/
-	/*font-family: 'Eczar-Bold', serif;*/
-	/*font-weight: normal;*/
+    /*letter-spacing: 0.05rem;*/
+    /*font-family: 'Eczar-Bold', serif;*/
+    /*font-weight: normal;*/
 }
 
 ul.mainNav, ul.cardList, ul.spreadsNav, ul.threeCardDrawList, ul.oneCardDrawList, ul.celticCrossDrawList {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 ul.mainNav li, ul.spreadsNav li {
-	display: inline-block;
-	margin-right: .75rem;
+    display: inline-block;
+    margin-right: .75rem;
 }
 
 ul.mainNav li a {
-	/*display: block;*/
-	/*color: #666;*/
-	/*padding: 0.5rem .75rem;*/
-	/*background: navajowhite;*/
-	/*text-decoration: none;*/
+    /*display: block;*/
+    /*color: #666;*/
+    /*padding: 0.5rem .75rem;*/
+    /*background: navajowhite;*/
+    /*text-decoration: none;*/
 }
 
 ul.mainNav li a:hover {
-	color: red;
-	background: #cbcbcb;
+    /*color: red;*/
+    background: #cbcbcb;
 }
 
 ul.threeCardDrawList li, ul.celticCrossDrawList li {
-	display: inline-block;
-	float: left;
-	max-width: 200px;
+    display: inline-block;
+    float: left;
+    max-width: 200px;
 }
 
 div.cardContainer {
-	width: 200px;
-	height: 350px;
-	position: relative;
-	perspective: 30rem;
-	border-radius: .5rem;
+    width: 200px;
+    height: 350px;
+    position: relative;
+    perspective: 30rem;
+    border-radius: .5rem;
 }
 
 div.spreadCard {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transition: 1s;
-	transform-style: preserve-3d;
-	box-shadow: .2rem .2rem .5rem #ccc;
-	border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+    transform-style: preserve-3d;
+    box-shadow: .2rem .2rem .5rem rgba(255, 176, 228, 0.46);;
+    border-radius: .5rem;
 }
 
 div.spreadCard div {
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-content: space-between;
-	align-items: flex-start;
-	border-radius: .5rem;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: flex-start;
+    border-radius: .5rem;
 }
 
 div.spreadCard div.front {
-	background-color: ivory;
-	transform: rotateY(180deg);
+    background-color: #2f0a2e;
+    transform: rotateY(180deg);
 
 }
 
 div.spreadCard div.back {
-	background-color: dodgerblue;
-	/*image from http://www.noqta.it/dromoscopio/*/
-	background: content-box url('./resource/pattern_28.gif')
+    background-color: dodgerblue;
+    /*image from http://www.noqta.it/dromoscopio/*/
+    background: content-box url('./resource/pattern_28.gif')
 }
 
 div.spreadCard div.front img {
-	flex: 0 0 auto;
-	align-self: center;
-	max-width: 90%;
-	height: auto;
+    flex: 0 0 auto;
+    align-self: center;
+    max-width: 90%;
+    height: auto;
 }
 
 div.spreadCard div.front button {
-	/*text-align: center;*/
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	padding: .5rem;
-	height: 2rem;
-	line-height: 1rem;
+    /*text-align: center;*/
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .5rem;
+    height: 2rem;
+    line-height: 1rem;
 }
 
 div.spreadCard.flipped {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .tarotEntryParent {
-	display: flex;
-	flex-flow: row wrap;
-	/*flex-direction: row;*/
-	/*flex-wrap: row;*/
-	justify-content: space-between;
-	/*align-content: flex-start;*/
-	/*align-items: flex-start;*/
+    display: flex;
+    flex-flow: row wrap;
+    /*flex-direction: row;*/
+    /*flex-wrap: row;*/
+    justify-content: space-between;
+    /*align-content: flex-start;*/
+    /*align-items: flex-start;*/
 }
 
 .tarotEntryParent > div {
     flex: 1 100%;
 }
 
-@media all and (min-width: 800px){
-	.tarotEntryParent > div {
-		flex: 1 0px;
-		margin: 0 0 0 2rem;
-	}
-	.tarotEntryParent > div:first-child {
-		margin: 0
-	}
-	div.cardContainer {
-		margin-right: 2rem;
-	}
-	ul.threeCardDrawList li, ul.celticCrossDrawList li {
-		display: inline-block;
-		float: left;
-		max-width: 200px;
-		margin-right: 2rem;
-		min-height: 425px;
-	}
+@media all and (min-width: 800px) {
+    .tarotEntryParent > div {
+        flex: 1 0px;
+        margin: 0 0 0 2rem;
+    }
+
+    .tarotEntryParent > div:first-child {
+        margin: 0
+    }
+
+    div.cardContainer {
+        margin-right: 2rem;
+    }
+
+    ul.threeCardDrawList li, ul.celticCrossDrawList li {
+        display: inline-block;
+        float: left;
+        max-width: 200px;
+        margin-right: 2rem;
+        min-height: 425px;
+    }
 }
 
 h2.referenceHead {
-	font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 button.close {
-	padding: 0 .5rem;
-	height: 2.5rem;
-	line-height: inherit;
+    padding: 0 .5rem;
+    height: 2.5rem;
+    line-height: inherit;
 }
 
 .tarotEntryParent h3 {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .tarotEntryParent > div > img {
-	min-width: 100%;
+    min-width: 100%;
 }
+
+
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #df5d5d;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button.button-primary, button.button-primary, input[type="button"].button-primary, input[type="reset"].button-primary, input[type="submit"].button-primary {
+    color: #fff;
+    background-color: #721c75;
+    border-color: #421e40;
+}
+
