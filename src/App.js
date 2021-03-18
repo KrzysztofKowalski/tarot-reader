@@ -35,9 +35,9 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Welcome to Tarot Reader</h1>
+				<h1>Welcome to Frog Tarot </h1>
 				<p>Tarot reader is a simple tarot reading and reference app.</p>
-				<p>Built by Andy Zeigert using React.</p>
+				<p>Built with Frogs using React.</p>
 			</div>
 		)
 	}

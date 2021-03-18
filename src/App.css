@@ -23,7 +23,11 @@ body {
     font-size: 16px;
     font-family: 'Eczar', serif;
     font-weight: normal;
-    background: #2f0a2e;
+    background: url('zorza.jpg') #2f0a2e;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    background-clip: content-box;
     color: rgba(255, 176, 228, 0.55);
 }
 
